@@ -1,0 +1,116 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap');
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Montserrat", sans-serif;
+  
+  --color-gold: #c5a059;
+  --color-wine-dark: #1a0505;
+  --color-stone-925: #0a0505;
+}
+
+/* Google Translate Styling */
+.google-translate-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.goog-te-gadget-simple {
+  background-color: transparent !important;
+  border: 1px solid rgba(212, 175, 55, 0.2) !important;
+  padding: 4px 8px !important;
+  border-radius: 9999px !important;
+  display: flex !important;
+  align-items: center !important;
+  transition: all 0.3s ease !important;
+}
+
+.goog-te-gadget-simple:hover {
+  border-color: rgba(212, 175, 55, 0.5) !important;
+  background-color: rgba(212, 175, 55, 0.05) !important;
+}
+
+.goog-te-gadget-simple img {
+  display: none !important;
+}
+
+.goog-te-gadget-simple .goog-te-menu-value {
+  color: rgba(224, 216, 208, 0.6) !important;
+  font-family: inherit !important;
+  font-size: 10px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.2em !important;
+  margin: 0 !important;
+}
+
+.goog-te-gadget-simple .goog-te-menu-value span:nth-child(3) {
+  display: none !important;
+}
+
+.goog-te-gadget-simple .goog-te-menu-value span:nth-child(5) {
+  color: #d4af37 !important;
+  margin-left: 4px !important;
+}
+
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+body {
+  top: 0px !important;
+}
+
+.goog-te-menu-frame {
+  box-shadow: none !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  background-color: #0a0505;
+  color: #e0d8d0;
+}
+
+.serif {
+  font-family: var(--font-serif);
+}
+
+.sans {
+  font-family: var(--font-sans);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glow-red {
+  box-shadow: 0 0 60px rgba(139, 0, 0, 0.15);
+}
+
+.wine-gradient {
+  background: radial-gradient(circle at 70% 30%, #3a0a0a 0%, transparent 70%), 
+              radial-gradient(circle at 20% 80%, #1a0505 0%, transparent 60%);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c5a059;
+}
